@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to the Jungle!</title>
+    <link rel="stylesheet" href="/stylesheets/lib/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/stylesheets/lib/bootstrap-theme.min.css" type="text/css">
+    <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
+</head>
+<body>
+<div class="container-fluid">
+    <div id="formContainer" class="center-block">
+        <form id="signInForm">
+            <div class="row">
+                <div class="col-lg-12"><h1 class="text-center">Sign - In</h1></div>
+            </div>
+            <div class="row mt-30">
+                <div class="col-lg-3">
+                    E - Mail :
+                </div>
+                <div class="col-lg-9">
+                    <input type="text" name="userName" id="userName"/>
+                </div>
+            </div>
+            <div class="row mt-30">
+                <div class="col-lg-3">
+                    Password :
+                </div>
+                <div class="col-lg-9">
+                    <input type="password" name="password" id="password"/>
+                </div>
+            </div>
+            <div class="row mt-30">
+                <div class="col-lg-12">
+                    <button class="btn btn-default btn-block" id="btnSignIn" name="btnSignIn" type="submit">Sign In
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="error" id="errorDiv"></div>
+                </div>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-lg-12">
+                <h4>Don't have an account yet? <a href="/signup">Sign-Up</a> now!</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/javascripts/lib/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="/javascripts/lib/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/javascripts/signIn.js"></script>
+</body>
+</html>

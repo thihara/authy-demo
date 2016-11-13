@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Two Factor Authentication!</title>
+    <link rel="stylesheet" href="/stylesheets/lib/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/stylesheets/lib/bootstrap-theme.min.css" type="text/css">
+    <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12"><h1 class="text-center">Two Factor Authentication</h1></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h4 class="text-center">Username and password is correct! Please verify the sign in attempt through the verification token</h4>
+        </div>
+    </div>
+    <div id="twoFactorFormContainer" class="center-block">
+        <form id="twoFactorForm">
+            <div class="row mt-30">
+                <div class="col-lg-4">
+                    Verification Token :
+                </div>
+                <div class="col-lg-8">
+                    <input type="text" name="authyToken" id="authyToken"/>
+                </div>
+            </div>
+            <div class="row mt-30">
+                <div class="col-lg-12">
+                    <button class="btn btn-default btn-block" id="btn2FA" name="btn2FA" type="submit">Verify</button>
+                </div>
+            </div>
+    </form>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="error" id="errorDiv"></div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/javascripts/lib/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="/javascripts/lib/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/javascripts/twoFactor.js"></script>
+</body>
+</html>

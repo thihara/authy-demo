@@ -1,0 +1,32 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+input {
+  width: 100%;
+}
+
+#formContainer {
+  width: 35%;
+}
+
+#signUpFormContainer {
+  width: 45%;
+}
+
+#twoFactorFormContainer {
+  width: 45%;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.error {
+  color: red;
+}
